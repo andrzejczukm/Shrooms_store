@@ -1,15 +1,98 @@
 nav {
-    display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
-    padding: 1rem 2rem; /* 3 */
-    background: #cfd8dc; /* 4 */
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0.5em 0.0000001em; 
+    background: #cfd8dc; 
   }
   
-navb ul {
-display: flex; /* 5 */
-list-style: none; /* 6 */
+nav ul {
+display: flex;
+list-style: none;
 }
 
 nav li {
-padding-left: 1rem; /* 7! */
+padding-right: 2em; 
+}
+
+
+a {
+  color: 	#404040;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.625em;
+  margin: 0.5em;
+  border-radius:  0.5em;
+  /* background-color: aliceblue; */
+}
+
+.glowny{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0.625em;
+  margin: 0.625em;
+  border-radius:  0;
+  
+
+}
+
+.glowny:hover{
+    background-color: #cfd8dc;
+
+}
+
+a:hover {
+    color: black;
+    background-color: aliceblue;
+
+}
+
+.my-list {
+    list-style-type: none;
+  }
+
+img {
+width: 80%; 
+height: auto; 
+}
+
+.obramowanie {
+background-color: #cfd8dc;
+padding: 5em 5em 5em 5em;
+margin: 5em 20em;
+  
+}
+
+.logo{
+    font-size: 2em;
+
+}
+
+/* do login.html */
+
+.formularz{
+    list-style: none;
+    margin: 1.5em;
+    padding: 1.5em;
+}
+
+.normallink{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.625em;
+    margin: 0.625em;
+    border-radius:  0;
+
+}
+
+.sign{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
 }

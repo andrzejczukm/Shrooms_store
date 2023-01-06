@@ -3,7 +3,8 @@
 {% block content %}
 
 
-<style>
+
+{% comment %} <style>
     .container-fluid {
         max-width: 100%;
     }
@@ -17,47 +18,42 @@
         border-color: #1497ff;
         box-shadow: none;
     }
-</style>
+</style> {% endcomment %}
 
 
-<div class="container-fluid">
-    <div class="row no-gutter">
-        <div class="col-md-12">
-            <div class="login d-flex align-items-center py-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-6  mx-auto">
-                            <form  action="{% url 'account:login' %}" method="post">
+<div class="">
+    <div class="obramowanie">
+        <form  action="{% url 'account:login' %}" method="post">
 
-                                {% csrf_token %}
-                                <h3 class="mb-4">Sign In</h3>
+            {% csrf_token %}
+            <h3 class= "sign">Sign In</h3>
 
-                                {% if form.errors %}
-                                <div class="alert alert-primary" role="alert">
-                                    Error: Username or Password not correct!
-                                </div>
-                                {% endif %}
-
-                                <label >{{ form.username.label}}</label>
-                                {{ form.username}}
-
-                                <label >{{ form.password.label}}</label>
-                                {{ form.password}}
-                                <div class="d-grid gap-2">
-                                    <input type="hidden" name="next" value="{{ next }}">
-                                    <button class="btn btn-primary py-2 mb-4 mt-5 fw-bold" type="submit" value="Log-in">Sign in
-                                    </button>
-                                </div>
-                                <p class="text-center pb-3">
-                                    <a href="{% url "account:register" %}">Create an account</a>
-                                </p>
-                            </form>
-                            
-                        </div>
-                    </div>
-                </div>
+            {% if form.errors %}
+            <div class="alert alert-primary" role="alert">
+                Error: Username or Password not correct!
             </div>
-        </div>
+            {% endif %}
+            <ul class="formularz">
+            <li>
+
+            <label >{{ form.username.label}}</label>
+            </li><li>{{ form.username}}</li>
+
+            <li>
+            <label >{{ form.password.label}} </label>
+            </li><li>
+            {{ form.password}}</li>
+            </ul>
+            <div class="d-grid gap-2">
+                <input type="hidden" name="next" value="{{ next }}">
+                <button class="" type="submit" value="Log-in">Sign in
+                </button>
+            </div>
+            
+            <p >
+                <a class = "normallink" href="{% url "account:register" %}">Create an account</a>
+            </p>
+        </form>
     </div>
 </div>
 
