@@ -2,7 +2,7 @@ nav {
     display: flex; 
     justify-content: space-between; 
     padding: 0.5em 0.0000001em; 
-    background: #cfd8dc; 
+    background: #cfd8dc ; 
   }
   
 nav ul {
@@ -11,7 +11,7 @@ list-style: none;
 }
 
 nav li {
-padding-right: 2em; 
+padding-right: 1em; 
 }
 
 
@@ -59,6 +59,15 @@ width: 80%;
 height: auto; 
 }
 
+
+.img2 {
+    width: 10%; 
+    height: auto; 
+    }
+
+
+
+
 .obramowanie {
 background-color: #cfd8dc;
 padding: 5em 5em 5em 5em;
@@ -93,6 +102,34 @@ margin: 5em 20em;
 
 .sign{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+}
 
+/* dashboard */
+
+.okoncie{
+    border-color:  #cfd8dc;
+    padding: 0.625em;
+    margin: 1em 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+body {
+    background-color:   rgb(255, 255, 255);
+  }
+
+/* summary */
+
+.ul_summary{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+}
+
+.obramowaniesum {
+border:0.123em solid rgb(181, 181, 181);
+padding: 0.5em 0.5em 0.5em 0.5em;
+margin: 1em 1em;
+      
 }
