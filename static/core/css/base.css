@@ -185,6 +185,13 @@ margin: 1em 1em;
 background-color: #cfd8dc;
       
 }
+.obramowaniesum3 {
+    border:0.123em white;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 1em;
+    background-color: #cfd8dc;
+          
+}
 
 .bialaczcionka{
     color:rgb(255, 255, 255);
@@ -198,10 +205,31 @@ background-color: #cfd8dc;
       
 }
 
+.sumsum {
+    background-color: #cfd8dc;
+    width: 33.33%; /* 1/3 of the full width */
+    float: left;
+    
+    }
+
+.checkout {
+    border:0.123em solid rgb(181, 181, 181);
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1em 20em;
+    background-color: white;
+            
+    }
+
 /* problemy z ceną */
 .wszystko span, .wszystko div {
     display: inline-block;
   }
+
+
+
+
+
+
 
 
 
@@ -228,5 +256,15 @@ background-color: #cfd8dc;
     text-align: center; 
 }
 
+.wszystko2 span, .wszystko2 div {
+    display: inline-block;
+  }
+
+.wszystko2 {
+    font-size: 1em; /* 3 times the size of the parent element's font */
+    /* text-transform: uppercase; Converts all text to uppercase */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+}
 
 
