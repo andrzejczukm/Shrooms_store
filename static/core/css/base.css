@@ -14,9 +14,37 @@ nav li {
 padding-right: 1em; 
 }
 
+.tlo{
+    background: #cfd8dc ; 
+}
+
+.body{
+    /* background-image: url('https://images.unsplash.com/photo-1666002167886-0c7ba58a410b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); */
+    /* rgba(105, 59, 50, 0.482); */
+    /* background-color: #3d3c4a; */
+    /* background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg'); */
+    /* background-image: url('https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+     */
+
+
+    /* to jest niezłe:  */
+
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/06/11/41/vintage-2721099_1280.jpg'); 
+
+    /* background-image: url('https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+    */
+    /* background-image: url('https://cdn.pixabay.com/photo/2012/03/04/00/11/arid-21799_1280.jpg');  */
+
+
+    /* background-image: url('https://images.unsplash.com/photo-1550895030-823330fc2551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'); */
+
+    /* background-image: url('https://images.unsplash.com/photo-1520420253244-9ff6536abf60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+     */
+}
+
 
 a {
-  color: 	#404040;
+  color: #404040;
   text-decoration: none;
   font-weight: bold;
   font-size: 1em;
@@ -25,6 +53,8 @@ a {
   border-radius:  0.5em;
   /* background-color: aliceblue; */
 }
+
+
 
 .glowny{
   color: black;
@@ -44,9 +74,16 @@ a {
 
 }
 
+.wysrodkuj{
+    justify-content: center;
+	align-items: center;
+    margin: 0 auto;
+
+}
+
 a:hover {
-    color: black;
-    background-color: aliceblue;
+    color: aliceblue;
+    /* background-color: aliceblue; */
 
 }
 
@@ -72,6 +109,7 @@ height: auto;
 background-color: #cfd8dc;
 padding: 5em 5em 5em 5em;
 margin: 5em 20em;
+text-align: center; 
   
 }
 
@@ -131,5 +169,51 @@ body {
 border:0.123em solid rgb(181, 181, 181);
 padding: 0.5em 0.5em 0.5em 0.5em;
 margin: 1em 1em;
+background-color: #cfd8dc;
       
 }
+
+.bialaczcionka{
+    color:rgb(255, 255, 255);
+
+}
+
+.przezroczyste{
+   
+        background-color: rgba(255, 255, 255, 0.5); /* kolor biały z połową przezroczystości */
+        
+      
+}
+
+/* problemy z ceną */
+.wszystko span, .wszystko div {
+    display: inline-block;
+  }
+
+
+
+
+/* category */
+
+.big-text {
+    font-size: 3em; /* 3 times the size of the parent element's font */
+    text-transform: uppercase; /* Converts all text to uppercase */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+}
+
+.middle-text {
+    font-size: 1em; /* 3 times the size of the parent element's font */
+    /* text-transform: uppercase; Converts all text to uppercase */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+}
+.middle-text-upper {
+    font-size: 1.5em; /* 3 times the size of the parent element's font */
+    text-transform: uppercase; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; 
+}
+
+
+

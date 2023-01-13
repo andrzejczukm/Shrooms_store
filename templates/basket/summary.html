@@ -3,24 +3,24 @@
 {% block content %}
 
 
-<main class="pt-5">
-  <div class="container" style="max-width: 1000px">
-    <div class="col-12">
-      <h1 class="h2">Your Basket</h1>
+<main class="">
+  <div class="przezroczyste">
+    <div class="">
+      <h3 class="middle-text-upper">Your Basket</h3>
     </div>
-    <div class="col-12">
-      <p>Manage your <b>items</b> in your basket</p>
+    <div class="middle-text">
+      <p>Manage your itemsin your basket. If there are any problems with your order, please contact us at +48 403 432 234. </p>
     </div>
     <hr />
   </div>
-  <div class="container" style="max-width: 1000px">
+  <div class="container" >
     
-    <div class="row g-3">
-      <div class="col-12 bg-light p-3 d-flex justify-content-between">
-        <div class="d-flex d-flex-inline">
-          <div class="pe-3">Order</div>
+    <div class="tło">
+      <div class="">
+        <div class="">
+          <div class="">Order</div>
           <div class="dropdown">
-          <a class="text-reset text-decoration-none dropdown-toggle" href="#" role="link" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="text-reset  dropdown-toggle" href="#" role="link" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">
           Shipping options
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -35,9 +35,9 @@
         </div>
         <div class="text-end">
           
-          <div class="">Sub Total: <span class="fw-bold">£</span><div id="subtotal" class="d-inline-flex fw-bold">{{basket.get_subtotal_price}}</div></div>
-          <div id="">Shipping <span class="small">(Next day delivery)</span>: <span class="fw-bold">£11.50</span></div>
-          <div class="pt-2">Total to pay: <span class="fw-bold h5">£</span><span id="total" class="fw-bold h5">{{basket.get_total_price}}</span></div>
+          <div class="wszystko" >Sub Total: <div id="subtotal" class="d-inline-flex fw-bold">{{basket.get_subtotal_price}}</div><span class="fw-bold">zł</span></div>
+          <div id="">Shipping <span class="small">(Next day delivery)</span>: <span class="fw-bold">11.50zł</span></div>
+          <div class="pt-2">Total to pay: <span id="total" class="fw-bold h5">{{basket.get_total_price}}</span><span class="fw-bold h5">zł</span></div>
           
         </div>
       </div>
@@ -47,15 +47,16 @@
           <button class="btn btn-light" type="button">Save for later</button>
         </div>
       </div>
-      <div class="col-md-7 col-lg-8 p-0">
+      <div class="obramowaniesum">
 
         {% for item in basket %} 
         {% with product=item.product %}
+        <hr>
 
         <div class="card mb-3 border-0 product-item" data-index="{{product.id}}">
-          <div class="row g-0">
-            <div class="col-md-2 d-none d-md-block">
-              <img class="img-fluid mx-auto d-block" alt="Responsive image"
+          <div class="">
+            <div class="">
+              <img class="img2" alt="Responsive image"
                   src="{{ product.image.url }}" />
             </div>
             <div class="col-md-10 ps-md-3">
@@ -77,6 +78,7 @@
             </div>
           </div>
         </div>
+        <hr>
         {% endwith %} 
         {% endfor %}
       </div>
