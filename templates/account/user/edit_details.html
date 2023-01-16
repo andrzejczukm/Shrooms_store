@@ -2,7 +2,7 @@
 {% block title %}Edit Profile{% endblock %}
 {% block content %}
 
-<style>
+{% comment %} <style>
     .account-form input {
         border: 2px solid #ccc;
         height: calc(2em + .75rem + 2px);
@@ -12,12 +12,11 @@
         border-color: #1497ff;
         box-shadow: none;
     }
-</style>
+</style> {% endcomment %}
 
-
-<div class="login">
-    <div class="">
-        <div class="">
+<div class="login d-flex align-items-center py-5">
+    <div class="obramowanie">
+        <div class="row">
             <div class="  mx-auto">
 
     <form class="account-form px-4 pt-4" method="post" enctype="multipart/form-data">
