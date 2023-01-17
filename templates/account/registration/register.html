@@ -3,13 +3,13 @@
 {% block content %}
 
 
-<div class="container-fluid">
+<div class="">
     
     <div class="obramowanie">
             <form class="" action="." method="post">
             {% csrf_token %}
-            <h3 class="">Create an account</h3>
-            <p class="">It's free and only takes a minute.</p>
+            <h3>Create an account</h3>
+            <p>It's free and only takes a minute.</p>
 
             {% if form.errors %}
             <p>Please correct the following errors:</p>
@@ -25,26 +25,26 @@
 
             <li>
             <label>{{ form.user_name.label }}<span class="text-muted small">
-                    (Required)</span></label>
+                    </span></label>
             </li><li>
             {{ form.user_name }}
             </li><li>
 
             <label>{{ form.email.label}}<span class="text-muted small">
-                    (Required)</span></label>
+                    </span></label>
             </li><li>
             {{ form.email }}
             </li><li>
             <label>{{ form.password.label}}<span class="text-muted mb-4">
                     </span></label>
-            
-                <small class="form-text text-muted mb-4 small">
+                </li><li>
+            <small>
                 At least 8 characters and 1 digit
-            </small>
+            </small></li><li>
             {{ form.password }}
             </li><li>
-            <label>{{ form.password2.label}}<span class="text-muted small">
-                    (Required)</span></label>
+            <label>{{ form.password2.label}}<span >
+                    </span></label></li><li>
             {{ form.password2 }}
             </li><li>
             <button type="submit">Register</button>

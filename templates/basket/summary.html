@@ -6,7 +6,12 @@
   window.onload = function() {
       document.getElementById("update-button").click();
   }
-</script>
+
+  var deleteButton = document.getElementById("delete-button");
+deleteButton.addEventListener("click", function() {
+  location.reload();
+});
+</script> 
 
 
 <main class="">
@@ -36,7 +41,7 @@
       <div class="">
         <div class="middle-text-upper">
           <a role="button" href="" class="" type="button">Checkout</a>
-          {% comment %} <button class="btn btn-light" type="button">Save for later</button> {% endcomment %}
+          {% comment %} <button class="" type="button">Save for later</button> {% endcomment %}
         </div>
       </div>
       <div class="obramowaniesum">
