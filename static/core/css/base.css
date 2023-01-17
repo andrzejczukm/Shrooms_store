@@ -1,4 +1,14 @@
-
+@media (min-width: 1000px){
+    .container{
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        max-width: 100%;
+        padding:0 24px;
+    }
+}
 
 nav {
     display: flex; 
