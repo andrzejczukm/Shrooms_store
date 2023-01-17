@@ -241,6 +241,23 @@ background-color: #cfd8dc;
             
     }
 
+.button {
+    background-color: #404040; 
+    border: none; 
+    color: white;
+    padding: 0.625em 1.25em;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 0.9em; 
+    margin: 0.4em 0.2em;
+    cursor: pointer; 
+    border-radius: 5em; 
+    }
+.button:hover {
+    background-color: #1c1c1c; /* Darken the background color on hover */
+    }
+
 /* problemy z ceną */
 .wszystko span, .wszystko div {
     display: inline-block;
