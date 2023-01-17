@@ -1,4 +1,4 @@
-@media (min-width: 1000px){
+/* @media (min-width: 1000px){
     .container{
         max-width: 1000px;
     }
@@ -8,7 +8,7 @@
         max-width: 100%;
         padding:0 24px;
     }
-}
+} */
 
 nav {
     display: flex; 
@@ -73,6 +73,17 @@ a {
   /* background-color: aliceblue; */
 }
 
+.nielink {
+    color: #404040;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.625em;
+    margin: 0.5em;
+    border-radius:  0.5em;
+    
+  }
+
 
 
 .glowny{
@@ -106,6 +117,10 @@ a:hover {
 
 }
 
+.hover:hover{
+    color: #404040;
+}
+
 .my-list {
     list-style-type: none;
   }
@@ -117,7 +132,7 @@ height: auto;
 
 
 .img2 {
-    width: 10%; 
+    width: 20%; 
     height: auto; 
     }
 

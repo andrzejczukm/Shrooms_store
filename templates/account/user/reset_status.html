@@ -6,16 +6,13 @@
 <div class="obramowanie">
     <div class="p-4">
         {% if 'email' in request.get_full_path %}
-                <div class = "obramowanie">
+                
                 <h3 class="mb-4">Password Reset Success</h3>
                 <p>Check your email for instructions</p>
-                </div>
         {% endif%}
         {% if 'complete' in request.get_full_path %}
-                <div class = "obramowanie">
                 <h3 class="mb-4">Password Reset Success</h3>
                 <a href="{% url "account:login" %}">Login</a>
-                </div>
         {% endif%}
     </div>       
 </div>

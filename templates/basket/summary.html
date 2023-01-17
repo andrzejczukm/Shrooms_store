@@ -2,6 +2,12 @@
 
 {% block content %}
 
+<script>
+  window.onload = function() {
+      document.getElementById("update-button").click();
+  }
+</script>
+
 
 <main class="">
   <div class="przezroczyste">
@@ -17,23 +23,9 @@
     
     <div class="checkout">
       <div class="obramowaniesum">
-        <div class="">
-          
-          <div class="dropdown">
-          <a class="text-reset  dropdown-toggle" href="#" role="link" id="dropdownLink" data-bs-toggle="dropdown" aria-expanded="false">
-          Shipping options
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-          </svg>
-          </a>
-
-          <ul class="dropdown-menu" aria-labelledby="dropdownLink">
-            <li class="item small">Next day delivery</li>
-            <li class="item small">Premimum delivery</li>
-          </ul>
-          </div>
-        </div>
-        <div class="text-end">
+        
+        <hr>
+        <div class="nielink">
           
           <div class="wszystko" >Sub Total: <div id="subtotal" class="d-inline-flex fw-bold">{{basket.get_subtotal_price}}</div><span class="fw-bold">zł</span></div>
           <div id="">Shipping <span class="small">(Next day delivery)</span>: <span class="fw-bold">11.50zł</span></div>
@@ -59,21 +51,23 @@
               <img class="img2" alt="Responsive image"
                   src="{{ product.image.url }}" />
             </div>
+
           <div class="">
               <div class="card-body p-1">
                 <a class="text-decoration-none text-reset" href="{{item.product.get_absolute_url}}">
-                  <p class="card-text pb-3">{{product.title}}</p>
+                  <p >{{product.title}} </p>
                 </a>
-                    <label for="select">Qty</label>
-                    <select id="select{{product.id}}" style="width:50px;height:31px;">
+                <a class= "hover">{{ product.price }}zł</a>
+                    <label for="select">Quantity</label>
+                    <select id="select{{product.id}}" >
                       <option value="" selected disabled hidden>{{item.qty}}</option>
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
                       <option value="">4</option>
                     </select>
-                <a type="button" id="update-button" data-index="{{product.id}}" class="update-button text-decoration-none small ps-3">Update</a>
-                <a type="button" id="delete-button" data-index="{{product.id}}" class="delete-button text-decoration-none small">Delete</a>
+                <a type="button" id="update-button" data-index="{{product.id}}" class="update-button">Update</a>
+                <a type="button" id="delete-button" data-index="{{product.id}}" class="delete-button">Delete</a>
               </div>
             </div>
           </div>
