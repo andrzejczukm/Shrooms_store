@@ -241,7 +241,7 @@ background-color: #cfd8dc;
             
     }
 
-.button {
+.cusbutton {
     background-color: #404040; 
     border: none; 
     color: white;
@@ -254,7 +254,7 @@ background-color: #cfd8dc;
     cursor: pointer; 
     border-radius: 5em; 
     }
-.button:hover {
+.cusbutton:hover {
     background-color: #1c1c1c; /* Darken the background color on hover */
     }
 

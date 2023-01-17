@@ -8,9 +8,7 @@
   }
 
   var deleteButton = document.getElementById("delete-button");
-deleteButton.addEventListener("click", function() {
-  location.reload();
-});
+  deleteButton.addEventListener("click", function() {location.reload();});
 </script> 
 
 
@@ -101,8 +99,9 @@ deleteButton.addEventListener("click", function() {
         action: "post",
       },
       success: function (json) {
+        location.reload()
         $('.product-item[data-index="' + prodid + '"]').remove();
-
+          
           if(json.qty == 0){
             total = 0
             subtotal = 0
